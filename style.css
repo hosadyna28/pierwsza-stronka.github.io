@@ -1,0 +1,200 @@
+body {
+    font-family: 'Vollkorn', serif;
+    font-size: 18px;
+    line-height: 28px;
+    background-color: #DAD4C5;
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.navbar-wrapper > .navigation {
+    flex: 2;
+}
+
+.socilas {
+    display: flex;
+}
+
+.navi ul, 
+.socials ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.navigation ul li {
+    padding-right: 2rem;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 300ms ease-in-out;
+}
+
+.navigation ul li a:hover {
+    color: brown;
+}
+
+.socials ul li a {
+    color: black;
+    transition: color 200ms ease-in;
+}
+.socials ul li a:hover {
+    color: brown;
+}
+
+.logo {
+    display: flex;
+    padding-right: 3rem;
+}
+
+.logohead {
+    width: 300px;
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.textplusimage {
+    display: flex;
+    margin-top: 2rem;
+}
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.text, .description {
+    margin-right: 5rem;
+}
+.text {
+    margin-bottom: 2rem;
+}
+
+img {
+    width: 380px;
+    height: 500px;
+}
+
+.image img {
+    transform: rotate(-4deg);
+}
+.image img:hover {
+    transition: 0.2s step-start;
+    transform: scale(1.4);
+}
+
+.container {
+    border-bottom: 3px solid white;
+    padding: 0.7rem 0 0.7rem 0;
+}
+
+.contact-wrapper {
+    display: flex;
+}
+
+.contact-container {
+    display: flex;
+  
+}
+.contact-wrapper>.contact-container {
+    flex: 2;
+}
+.contact-container {
+    justify-content: center;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    padding-bottom: 1rem;
+}
+
+.contact ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: color 200ms ease-in;
+}
+
+.contact ul li a:hover {
+    color: brown;
+
+}
+
+.adress {
+    margin-right: 1.7rem;
+}
+
+.photo {
+    margin: 10px 0;
+    width: 380px;
+    height: 380px;
+    background: white;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.photo img {
+    width: 370px;
+    height: 370px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.photo:hover {
+    transition: 0.4s all linear;
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .header,
+    .navbar-wrapper, 
+    .navigation,
+    .navi ul {
+      flex-direction: column;
+    }
+    .navi ul {
+        align-items: flex-start;
+        margin-top: 1.7rem;
+    }
+
+    .container {
+        margin-left: 1.7rem;
+    }
+    .textplusimage {
+        flex-direction: column;
+    }
+
+    .contact-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .contact-container {
+        justify-content: flex-start;
+        border-bottom: 3px solid white;
+    }
+
+    .adress {
+        margin-top: 1.7rem;
+    }
+
+}
